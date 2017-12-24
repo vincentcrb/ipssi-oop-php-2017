@@ -1,0 +1,7 @@
+<?php /* @var $meetings \Application\Collection\MeetingCollection */ ?>
+<h1>Meetings</h1>
+<ul>
+    <?php foreach ($meetings as $meetings) : /* @var $meetings \Application\Entity\Meeting */ ?>
+        <li><a href="film/<?= urlencode($meetings->name()) ?>"><?= $meetings->name() ?></a></li>
+    <?php endforeach ?>
+</ul>
