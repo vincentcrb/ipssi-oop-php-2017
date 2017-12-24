@@ -38,4 +38,15 @@ class Meeting
     {
         return $this->description;
     }
+
+    public function getDate_start() : \DateTime
+    {
+        return $this->date_start;
+    }
+
+    public function getDate_end() : \DateTime
+    {
+        return $this->date_end;
+    }
+
 }
